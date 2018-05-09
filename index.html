@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<title>Kyrnea: cap sur la Corse</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/stylus/custom.css">
-<body>
+  <head>
+      <title>Kyrnea: cap sur la Corse</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/stylus/custom.css">
+  </head>
 
+<body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -16,16 +19,16 @@
       <i class="fa fa-bars"></i>
     </a>
     <a href="#accueil" class="w3-bar-item w3-button">ACCUEIL</a>
-    <a href="#CORSE" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> CORSE</a>
-    <a href="#forfait" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-plane"></i> NOS FORFAITS</a>
+    <a href="#corse" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> CORSE</a>
+    <a href="#forfaits" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-plane"></i> NOS FORFAITS</a>
     <a href="#temoignages" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-comments"></i> TEMOIGNAGES CLIENTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#CORSE" class="w3-bar-item w3-button" onclick="toggleFunction()">CORSE</a>
-    <a href="#forfait" class="w3-bar-item w3-button" onclick="toggleFunction()">NOS FORFAITS</a>
+    <a href="#corse" class="w3-bar-item w3-button" onclick="toggleFunction()">CORSE</a>
+    <a href="#forfaits" class="w3-bar-item w3-button" onclick="toggleFunction()">NOS FORFAITS</a>
     <a href="#temoignages" class="w3-bar-item w3-button" onclick="toggleFunction()">TEMOIGNAGES CLIENTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
@@ -40,7 +43,7 @@
 </div>
 
 <!-- Container (CORSE Section) -->
-<div class="w3-content w3-container w3-padding-64" id="KYRNEA">
+<div class="w3-content w3-container w3-padding-64" id="corse">
   <div class="w3-center w3-black w3-padding w3-opacity-min">
       <h2 >Cap sur la Corse</h2>
       <p>La Corse, l'île de beauté, <q><i>dix fois conquise, jamais soumise</i> </q></p>
@@ -121,14 +124,14 @@
 </div>
 
 <!-- Container (forfait Section) -->
-<div class="w3-content w3-container w3-padding-64" id="forfait">
+<div class="w3-content w3-container w3-padding-64" id="forfaits">
   <h3 class="w3-center">NOS PRODUITS</h3>
   <p class="w3-center"><em>Des forfaits vacances et séjours en Corse exclusifs à notre agence de voyages</em></p><br>
 
   <div class="w3-card-4 w3-padding w3-white">
     <div class="w3-display-container w3-center">
       <img src="/public/images/Bonifacio_les_falaises.jpg" alt="Lights" style="width:100%">
-      <div class="w3-xlarge w3-display-topleft w3-padding-small">Circuits 16 jours : Mini groupes de 15 personnes</div>
+      <div class="w3-xlarge w3-display-topleft w3-padding-small">Circuits 16 jours : Mini groupes de 15 *</div>
       <div class="w3-xlarge  w3-text-white w3-display-bottomleft w3-padding">4.755$</div>
     </div>
     <div class="w3-row">
@@ -144,41 +147,49 @@
             <div class="w3-rest"></div>
             <div class="w3-col w3-left"><h3>Ferme auberge *</h3></div>
         </div>
-
         <div class="w3-row">
             <P>séjour d'une semaine - rustique, authentique... et gastronomique, car vous dégusterez les produits de la ferme apprêtés d'une manière traditionnelle - Prix par personne, tarif basse saison.</P>
         </div>
       </div>
     </div>
+    <p>(*) Les prix sont en dollars canadiens CAD "à partir de", et, sauf indication contraire, par personne en base double. Pour les tarifs "supplément simple" et "départ de France", nous consulter.</p>
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="temoignages">
-    <h3 class="w3-center">TÉMOIGNAGES CLIENTS</h3>
-    <p>Vous trouverz ci-dessous quelques témoignages de nos clients ayant pu découvrir la corse grace à nos services</p>
+  <div class="w3-center">
+      <h3 >TÉMOIGNAGES CLIENTS</h3>
+      <p>Quelques références et impressions de voyage en Corse - autres références (216 pages) disponibles à l’agence.</p>
+      <q>Ils ont été enchantés, émerveillés, envoûtés, par la Corse. Et ils veulent faire partager leurs émotions et leur bonheur!</q>
+  </div>
+   
     <div class="slideshow-container">
-    <div class="w3-panel mySlides fade w3-card-4 w3-dark-gray" style="height:240px">
-        <p class=" w3-serif w3-padding-large">
-        <i class="fa fa-quote-right w3-xlarge w3-text-red"></i><br>
-        Cher Luc, Tous mes sens sont en émoi ! La vue pour toutes ces beautés à contempler ! L'odorat pour les senteurs subtiles partout ! Le goût pour ces bouquets de saveurs dans chaque assiette ! L'ouïe pour ces polyphonies envoûtantes et le bruit de la mer la nuit ! Il me faudrait inventer un sixième sens pour te dire que la Corse est pour moi la huitième merveille du monde sinon la première ! Merci de m'avoir fait découvrir ton pays de beauté et de grâce ! </p>
-      <p class=" w3-serif w3-padding-large">- Colette O.</p>
+    <div class="w3-panel mySlides fade w3-card-4 w3-flat-midnight-blue" style="height:180px">
+      <i class="fa fa-quote-left w3-large w3-text-red"></i><br>
+      <p class="w3-small">Cher Luc, Tous mes sens sont en émoi ! La vue pour toutes ces beautés à contempler ! L'odorat pour les senteurs subtiles partout ! Le goût pour ces bouquets de saveurs dans chaque assiette ! L'ouïe pour ces polyphonies envoûtantes et le bruit de la mer la nuit ! Il me faudrait inventer un sixième sens pour te dire que la Corse est pour moi la huitième merveille du monde sinon la première ! Merci de m'avoir fait découvrir ton pays de beauté et de grâce ! 
+      <i class="fa fa-quote-right w3-right w3-large w3-text-red"></i>
+      </p>
+      <p class="w3-small">-- Colette O.</p>
     </div>
-    <div class="w3-panel mySlides fade w3-card-4 w3-dark-gray" style="height:240px">
-        <p class=" w3-serif w3-padding-large">
-        <i class="fa fa-quote-right w3-xlarge w3-text-red"></i><br>
-        M. Luc Palayer, agence de voyages Kyrnea Voyage, Merci de nous avoir fait découvrir votre île somptueuse. Quoi de mieux que voir un pays à travers les yeux de celui qui l'aime. Merci et à bientôt peut être.</p>
-      <p class=" w3-serif w3-padding-large">- Louise T. et Jacqueline T.</p>
+    <div class="w3-panel mySlides fade w3-card-4 w3-flat-midnight-blue" style="height:180px">
+      <i class="fa fa-quote-left  w3-large w3-text-red"></i><br>
+      <p class="w3-small">M. Luc Palayer, agence de voyages Kyrnea Voyage, Merci de nous avoir fait découvrir votre île somptueuse. Quoi de mieux que voir un pays à travers les yeux de celui qui l'aime. Merci et à bientôt peut être.
+      <i class="fa fa-quote-right w3-right w3-large w3-text-red"></i>
+      </p>
+      <pclass="w3-small">-- Louise T. et Jacqueline T.</p>
     </div>
-    <div class="w3-panel mySlides fade w3-card-4 w3-dark-gray" style="height:240px">
-        <p class=" w3-serif w3-padding-large">
-        <i class="fa fa-quote-right w3-xlarge w3-text-red"></i><br>
-        On te salue ! Grâce à toi nous repartons avec une parcelle de ton île. Pour nous c'est beaucoup car c'était le but de notre voyage.</p>
-      <p class=" w3-serif w3-padding-large">- Hermas L.</p>
+    <div class="w3-panel mySlides fade w3-card-4 w3-flat-midnight-blue" style="height:180px">
+      <i class="fa fa-quote-left w3-large w3-text-red"></i><br>
+      <p class="w3-small">On te salue ! Grâce à toi nous repartons avec une parcelle de ton île. Pour nous c'est beaucoup car c'était le but de notre voyage.
+      <i class="fa fa-quote-right w3-right w3-large w3-text-red"></i>
+      </p>
+      <p class="w3-small">-- Hermas L.</p>
     </div>
-    <div class="w3-panel mySlides fade w3-card-4 w3-dark-gray" style="height:240px">
-        <p class=" w3-serif w3-padding-large">
-        <i class="fa fa-quote-right w3-xlarge w3-text-red"></i><br>
-        Merci de nous avoir fait découvrir tant de beautés. Le spectacle est fini, mais ces beaux moments de vie resteront à jamais</p>
-      <p class=" w3-serif w3-padding-large">- Fabienne C.</p>
+    <div class="w3-panel mySlides fade w3-card-4 w3-flat-midnight-blue" style="height:180px">
+      <i class="fa fa-quote-left  w3-large w3-text-red"></i><br>
+      <p class="w3-small">Merci de nous avoir fait découvrir tant de beautés. Le spectacle est fini, mais ces beaux moments de vie resteront à jamais
+      <i class="fa fa-quote-right w3-right w3-large w3-text-red"></i>
+      </p>
+      <p class="w3-small">-- Fabienne C.</p>
     </div>
     <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -254,90 +265,8 @@
   </div>
  </footer>
  
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(45.5300631, -73.6154668);
-  var mapOptions= {
-    center:myCenter,
-    zoom:10, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-//carousel
-var slideIndex = 0;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
-showSlides();
-
-// Next/previous controls
-function plusSlides(n) {
-  var newslideIndex = slideIndex + n;
-  if(newslideIndex < slides.length && newslideIndex > 0){
-     currentSlide(newslideIndex);
-  }
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  var i;    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-    slideIndex = n;
-    slides[n-1].style.display = "block";
-    dots[n-1].className += " active";
-}
-
-function showSlides() {
-  var i;
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000);
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHlbM_1W20XRMGEu-0zcsaR_yduGDf3PI&callback=myMap"></script>
-
+<script src="/js/main.js"></script>
 
 </body>
 </html>
