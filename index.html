@@ -18,7 +18,7 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#accueil" class="w3-bar-item w3-button">ACCUEIL</a>
+    <a href="#accueil" class="w3-bar-item w3-button w3-black w3-large w3-opacity-min">Kyrnea Voyages</a>
     <a href="#corse" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> CORSE</a>
     <a href="#forfaits" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-plane"></i> NOS FORFAITS</a>
     <a href="#temoignages" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-comments"></i> TEMOIGNAGES CLIENTS</a>
@@ -31,14 +31,14 @@
     <a href="#forfaits" class="w3-bar-item w3-button" onclick="toggleFunction()">NOS FORFAITS</a>
     <a href="#temoignages" class="w3-bar-item w3-button" onclick="toggleFunction()">TEMOIGNAGES CLIENTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="accueil">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <p class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-opacity-min">Kyrnea Voyages</p>
-    <img src="/public/images/cc760007a.jpg" class="w3-image" style="width:150px">
+  <div class="w3-display-topleft" style="margin-top:50px"  >
+    <img src="/public/images/IMG_8652.PNG" class="w3-image w3-opacity-min" style="width:163px">
   </div>
 </div>
 
@@ -215,14 +215,8 @@
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">AGENCE KYRNEA VOYAGES</h3>
-  <p class="w3-center"><em>Merci de nous faire part de vos commentaires!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Montréal, Québec, Canada<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Téléphone: +1 514 527 6663<br>
@@ -230,22 +224,10 @@
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Cellulaire: +1 514 802 0223<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kyrneacanadavoyages@yahoo.fr<br>
       </div>
-      <p> Pour toute demande de renseignements</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Courriel" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVOYER MESSAGE
-        </button>
-      </form>
     </div>
+    <div class="w3-row w3-padding-32 w3-section">
+     <!-- Add Google Maps -->
+     <div id="googleMap" class="w3-round-large w3-greyscale w3-mobile" style="width:100%;height:400px;"></div>
   </div>
 </div>
 
@@ -264,9 +246,9 @@
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
  </footer>
- 
+ <script src="/js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHlbM_1W20XRMGEu-0zcsaR_yduGDf3PI&callback=myMap"></script>
-<script src="/js/main.js"></script>
+
 
 </body>
 </html>

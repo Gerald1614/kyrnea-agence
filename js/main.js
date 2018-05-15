@@ -1,21 +1,97 @@
 
-//Add Google Map
+const Base_URL = "http://127.0.0.1:8887"
 
+
+//responsive design : adjust zoom of google map to size of screen
+var zoom;
+var mqls = [ // list of window.matchMedia() queries
+    window.matchMedia("(min-width: 600px)"),
+    window.matchMedia("(min-width: 374px)")
+]
+if (matchMedia) {
+    for (var i=0; i<mqls.length; i++){ // loop through queries
+        WidthChange(mqls[i]) // call handler function explicitly at run time
+        mqls[i].addListener(WidthChange) // call handler function whenever the media query is triggered
+    }
+  }
+  
+  // media query change
+  function WidthChange(mql) {
+    if (mqls[0].matches) {
+        console.log("the width of browser is more then 600px") 
+        zoom=3
+    } 
+    else if (mqls[1].matches) {
+        zoom=2
+        console.log("the width of browser is less then 600px") 
+    } else {
+        zoom=1
+        console.log("the width of browser is less then 374px") 
+    }
+  
+  }
+
+
+//Add Google Map
 function myMap()
 {
-  myCenter=new google.maps.LatLng(45.5300631, -73.6154668);
-  var mapOptions= {
-    center:myCenter,
-    zoom:10, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+        zoom: zoom,
+        center: {lat: 48.9596659, lng: -32.5379588},
+        mapTypeId: 'terrain'
+      });
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
+      var flightPlanCoordinates = [
+        {lat: 45.5300631, lng:-73.6154668},
+        {lat: 42.3282433, lng: 9.0489307},
+      ];
+      var flightPath = new google.maps.Polyline({
+        path: flightPlanCoordinates,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+     
+      flightPath.setMap(map);
+
+      var markers = [
+        ['Quebec', 45.5300631, -73.6154668, '/public/images/montreal.png'],
+        ['Corse', 42.3282433,  9.0489307, '/public/images/corse_tete.gif']
+      ];
+     
+
+      function setMarkers(map) {
+        var infowindow = new google.maps.InfoWindow();
+        for (var i = 0; i < markers.length; i++) {
+          var place = markers[i];
+          var marker = new google.maps.Marker({
+            position: {lat: place[1], lng: place[2]},
+            map: map,
+            icon: {
+                scaledSize: new google.maps.Size(48, 36), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(24,48), // anchor
+                url: Base_URL + place[3]
+              },
+            title: place[0]
+          });
+
+          google.maps.event.addListener(marker, 'click', (function (marker, i) {
+            return function () {
+                infowindow.setContent(markers[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+        }
+      }
+      setMarkers(map);
+
+      google.maps.event.addDomListener(window, 'resize', function() {
+        map.setZoom(zoom);
+      });
 }
+
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
