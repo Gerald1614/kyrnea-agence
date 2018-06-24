@@ -156,3 +156,15 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+// active navbar item
+var linkContainer = document.getElementById("myNavbar");
+var links = linkContainer.getElementsByTagName("a");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+    var current = linkContainer.getElementsByClassName("w3-black");
+    console.log(current)
+    current[0].className = current[0].className.replace(" w3-black", "");
+    this.className += " w3-black";
+  });
+}

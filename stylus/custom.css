@@ -6,6 +6,9 @@ body, html {
     line-height: 1.8;
     background-image: url(/public/images/fond.jpg)
 }
+a:link {
+  text-decoration: none;
+}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -97,7 +100,8 @@ body, html {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: black;
+  color: white
 }
 
 
