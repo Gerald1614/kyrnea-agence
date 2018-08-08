@@ -18,15 +18,15 @@ if (matchMedia) {
   // media query change
   function WidthChange(mql) {
     if (mqls[0].matches) {
-        console.log("the width of browser is more then 600px") 
+        // console.log("the width of browser is more then 600px") 
         zoom=3
     } 
     else if (mqls[1].matches) {
         zoom=2
-        console.log("the width of browser is less then 600px") 
+        // console.log("the width of browser is less then 600px") 
     } else {
         zoom=1
-        console.log("the width of browser is less then 374px") 
+        // console.log("the width of browser is less then 374px") 
     }
   
   }
@@ -163,7 +163,6 @@ var links = linkContainer.getElementsByTagName("a");
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function() {
     var current = linkContainer.getElementsByClassName("w3-black");
-    console.log(current)
     current[0].className = current[0].className.replace(" w3-black", "");
     this.className += " w3-black";
   });

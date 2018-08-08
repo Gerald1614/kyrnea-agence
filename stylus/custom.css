@@ -33,7 +33,10 @@ a:link {
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url('/public/images/04_Calanche_Piana.jpg');
-    min-height: 200px;
+    min-height: 300px;
+}
+.w3-display-middle {
+  width:80%
 }
 
 .w3-wide {letter-spacing: 10px;}
