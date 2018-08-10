@@ -108,7 +108,6 @@ function myFunction() {
 var slideIndex = 0;
 var slides = document.getElementsByClassName("mySlides");
 var dots = document.getElementsByClassName("dot");
-showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
