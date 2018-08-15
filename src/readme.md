@@ -1,5 +1,5 @@
 ###Project Title
-  static website for travekl agency
+  static website for travel agency
 
 ###Getting Started
   git clone https://GeraldM1614@bitbucket.org/GeraldM1614/kyrnea-agence.git
