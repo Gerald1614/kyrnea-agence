@@ -1,5 +1,5 @@
 
-const Base_URL = "http://127.0.0.1:8887"
+const Base_URL = "http://127.0.0.1:8887";
 
 
 //responsive design : adjust zoom of google map to size of screen
@@ -168,3 +168,36 @@ for (var i = 0; i < links.length; i++) {
 }
 
 
+var slider = document.getElementById("myRange");
+var jour_select = document.getElementById("jour");
+var contenu = document.getElementById("contenu");
+var photo = document.getElementById("photo");
+jour_select.innerHTML = "JOUR " + slider.value + " : " + Descriptif_forfait[slider.value-1].titre;
+contenu.innerHTML = Descriptif_forfait[slider.value-1].contenu
+photo.src= Descriptif_forfait[slider.value-1].photo
+
+slider.oninput = function() {
+    jour_select.innerHTML = "JOUR " + this.value  + " : " + Descriptif_forfait[this.value-1].titre;;
+    contenu.innerHTML = Descriptif_forfait[this.value-1].contenu
+    photo.src= Descriptif_forfait[this.value-1].photo
+}
+
+function openTab(evt, tabName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    if (evt != null) {
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-border-blue", "");
+         }
+        evt.currentTarget.firstElementChild.className += " w3-border-blue";
+    }
+    
+    document.getElementById(tabName).style.display = "block";
+
+  }
+  openTab(null, 'descriptif')
+  
