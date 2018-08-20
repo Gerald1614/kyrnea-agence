@@ -179,7 +179,13 @@ photo.src= Descriptif_forfait[slider.value-1].photo
 slider.oninput = function() {
     jour_select.innerHTML = "JOUR " + this.value  + " : " + Descriptif_forfait[this.value-1].titre;;
     contenu.innerHTML = Descriptif_forfait[this.value-1].contenu
-    photo.src= Descriptif_forfait[this.value-1].photo
+    if (Descriptif_forfait[this.value-1].photo =="") {
+        photo.style.display = 'none';
+    }
+    else {
+        photo.style.display = 'inline-block';
+        photo.src= Descriptif_forfait[this.value-1].photo
+    }
 }
 
 function openTab(evt, tabName) {
