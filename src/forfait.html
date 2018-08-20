@@ -63,12 +63,15 @@
 <div id="descriptif" class="w3-container tab w3-margin" style="display:none; position:relative">
 <h3>Séjour en Corse en départ de Montréal</h3>
 <div class="w3-card-4 w3-margin-bottom w3-padding">
+
+
     <header class="w3-container w3-indigo">
-      <h3 id="jour"></h3>
+        <button id="previous" onclick="previousDay()" class=" w3-ripple w3-round w3-disabled w3-margin w3-button w3-hover-green w3-teal w3-border-teal w3-left"></button>
+        <button id="next" onclick="nextDay()" class=" w3-ripple w3-round w3-margin w3-button w3-teal w3-hover-green w3-border-teal w3-right">Next &raquo;</button>
+      <h3 class="w3-center" id="jour"></h3>
     </header>
-    <div class="slidecontainer w3-center">
-        <input type="range" min="1" max="16" value="1" class="slider" id="myRange">
-      </div>
+ 
+
     <div class="w3-container w3-white">
           <img src="" alt="" id="photo" class="w3-left w3-round w3-margin" style="width:20vw">
           <p id="contenu"></p>
@@ -85,7 +88,7 @@
   <h3>Le prix comprend :</h3>
   <ul>
     <li>Vols Montréal-Corse aller retour (via Marseille).</li>
-    <li>d’aéroports (Française, Canadienne, Corse).</li> 
+    <li>Taxes d’aéroports incluses (Française, Canadienne, Corse).</li> 
     <li>les transferts.</li> 
     <li>Transport en autobus climatisé</li> 
     <li>Hébergement : hôtels avec chambres avec salle de bain privée.</li>
@@ -191,19 +194,34 @@
   </div>
 </div>
 
-<footer class="w3-center w3-black w3-padding w3-hover-opacity-off">
-  <div class="w3-right w3-margin">
-      <a href="#accueil" class="w3-button w3-dark-grey"><i class="fa fa-arrow-up"></i>Haut de la page</a>
-  </div>
-
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+<footer>
+    <div class="w3-content w3-container" id="contact">
+    <div class="w3-row w3-padding-16 w3-section w3-flat-silver w3-opacity">
+        <h1 class="w3-center w3-black">Nos coordonnées</h1>
+        <div class="w3-large w3-col m6">
+          <p class="w3-margin-left"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kyrneacanadavoyages@yahoo.fr</p>
+          <p class="w3-margin-left"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Téléphone: +1 514 527 6663</p>
+        </div>
+        <div class="w3-large w3-col m6">
+            <p class="w3-margin-left"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Sans frais: +1 888 282 6773</p>
+            <p class="w3-margin-left"> <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Cellulaire: +1 514 802 0223</p>
+        </div>
+      </div>
+    </div>
+   <div class="w3-center w3-black w3-padding w3-hover-opacity-off">
+      <div class="w3-right w3-margin">
+          <a href="#accueil" class="w3-button w3-dark-grey"><i class="fa fa-arrow-up"></i>Haut de la page</a>
+      </div>
+    
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+   </div>   
   </footer>
   <script src="/js/data_forfait.js"></script>
   <script src="/js/main.js"></script>

@@ -27,7 +27,7 @@ let Descriptif_forfait =
  {
   "jour": 5,
   "titre": "Visite d'Aiacciu",
-  "contenu": "<p>Visite D’Aiacciu (Ajaccio). Durant cette visite, vous aurez l’occasion  de découvrir tous les charmes de la capitale politique de la Corse  qui est aussi, et surtout, la ville natale de Napoléon et de Tino Rossi. Au programme :</p> <ul><li>La cathédrale.</li><li>La vieille ville, la rue Fesch et le « Borgu » </li> <li>Le Marché.</li><li>Musée Fesch.</li></ul> <p>En soirée, souper inclus. (0 Kms). </p>",
+  "contenu": "<p>Visite D’Aiacciu (Ajaccio). Durant cette visite, vous aurez l’occasion  de découvrir tous les charmes de la capitale politique de la Corse  qui est aussi, et surtout, la ville natale de Napoléon et de Tino Rossi. Au programme :</p><ul><li>La cathédrale.</li><li>La vieille ville, la rue Fesch et le « Borgu » </li> <li>Le Marché.</li><li>Musée Fesch.</li></ul> <p>En soirée, souper inclus. (0 Kms). </p>",
   "photo": "./public/images/ORIG_ajaccio.jpg"
  },
  {

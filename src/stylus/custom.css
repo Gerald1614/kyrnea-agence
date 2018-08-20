@@ -1,5 +1,8 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body {
+  font-size: 1.5vw;
+}
 body, html {
     height: 100%;
     color: #3B3B3B;
@@ -137,9 +140,9 @@ a:link {
 
 p.shine
 {
-    font-size: 2em;
+    font-size: 3vw;
     margin: 0 auto;
-    width: 600px;
+    width: 60%;
 }
 
 /* shining text effect */
@@ -168,43 +171,3 @@ p.shine
     }
 }
 
-
-.slidecontainer {
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 90%;
-  margin:25px;
-  height: 15px;
-  border-radius: 5px;
-  background: #4CAF50;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #657c64;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #657c64;
-  cursor: pointer;
-}

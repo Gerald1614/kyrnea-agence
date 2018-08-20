@@ -167,25 +167,54 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
-
-var slider = document.getElementById("myRange");
+var previousBtn = document.getElementById("previous");
+var nextBtn = document.getElementById("next");
 var jour_select = document.getElementById("jour");
 var contenu = document.getElementById("contenu");
 var photo = document.getElementById("photo");
-jour_select.innerHTML = "JOUR " + slider.value + " : " + Descriptif_forfait[slider.value-1].titre;
-contenu.innerHTML = Descriptif_forfait[slider.value-1].contenu
-photo.src= Descriptif_forfait[slider.value-1].photo
+var NextPrev = 0;
+jour_select.innerHTML = "JOUR " + 1 + " : " + Descriptif_forfait[0].titre;
+contenu.innerHTML = Descriptif_forfait[0].contenu;
+photo.src= Descriptif_forfait[0].photo;
+previousBtn.innerHTML = "&laquo;" 
+nextBtn.innerHTML = "JOUR 2 " + " &raquo;";
 
-slider.oninput = function() {
-    jour_select.innerHTML = "JOUR " + this.value  + " : " + Descriptif_forfait[this.value-1].titre;;
-    contenu.innerHTML = Descriptif_forfait[this.value-1].contenu
-    if (Descriptif_forfait[this.value-1].photo =="") {
-        photo.style.display = 'none';
+function previousDay() {
+
+    if(NextPrev > 0) {
+        NextPrev--;
+        jour_select.innerHTML = "JOUR " + (NextPrev+1) + " : " + Descriptif_forfait[NextPrev].titre;
+        contenu.innerHTML = Descriptif_forfait[NextPrev].contenu;
+        photo.src= Descriptif_forfait[NextPrev].photo;
+        nextBtn.classList.remove("w3-disabled")
+        previousBtn.innerHTML = "&laquo; " + "JOUR " + NextPrev
+        nextBtn.innerHTML = "JOUR " + (NextPrev +2) + " &raquo;";
+    } 
+    if (NextPrev ===1) {
+        previousBtn.innerHTML = "&laquo;"
+        previousBtn.classList.add("w3-disabled")
     }
-    else {
-        photo.style.display = 'inline-block';
-        photo.src= Descriptif_forfait[this.value-1].photo
+
+
+}
+
+function nextDay() {
+
+    if(NextPrev <15) {
+        NextPrev++;
+        jour_select.innerHTML = "JOUR " + (NextPrev+1) + " : " + Descriptif_forfait[NextPrev].titre;
+        contenu.innerHTML = Descriptif_forfait[NextPrev].contenu;
+        photo.src= Descriptif_forfait[NextPrev].photo;
+        previousBtn.classList.remove("w3-disabled")
+        previousBtn.innerHTML = "&laquo; " + "JOUR " + NextPrev
+        nextBtn.innerHTML = "JOUR " + (NextPrev +2)+ " &raquo;";
+    } 
+    if (NextPrev ===14) {
+        nextBtn.innerHTML= "&raquo;";
+        nextBtn.classList.add("w3-disabled")
     }
+
+
 }
 
 function openTab(evt, tabName) {
