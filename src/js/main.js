@@ -167,17 +167,27 @@ for (var i = 0; i < links.length; i++) {
   });
 }
 
-var previousBtn = document.getElementById("previous");
-var nextBtn = document.getElementById("next");
-var jour_select = document.getElementById("jour");
-var contenu = document.getElementById("contenu");
-var photo = document.getElementById("photo");
-var NextPrev = 0;
-jour_select.innerHTML = "JOUR " + 1 + " : " + Descriptif_forfait[0].titre;
-contenu.innerHTML = Descriptif_forfait[0].contenu;
-photo.src= Descriptif_forfait[0].photo;
-previousBtn.innerHTML = "&laquo;" 
-nextBtn.innerHTML = "JOUR 2 " + " &raquo;";
+    let previousBtn;
+    let nextBtn;
+    let jour_select;
+    let contenu;
+    let photo;
+    let NextPrev;
+function initForfait() {
+    openTab(null, 'descriptif')
+    previousBtn = document.getElementById("previous");
+    nextBtn = document.getElementById("next");
+    jour_select = document.getElementById("jour");
+    contenu = document.getElementById("contenu");
+    photo = document.getElementById("photo");
+    NextPrev = 0;
+    jour_select.innerHTML = "JOUR " + 1 + " : " + Descriptif_forfait[0].titre;
+    contenu.innerHTML = Descriptif_forfait[0].contenu;
+    photo.src= Descriptif_forfait[0].photo;
+    previousBtn.innerHTML = "&laquo;" 
+    nextBtn.innerHTML = "JOUR 2 " + " &raquo;";
+}
+
 
 function previousDay() {
 
@@ -199,7 +209,6 @@ function previousDay() {
 }
 
 function nextDay() {
-
     if(NextPrev <15) {
         NextPrev++;
         jour_select.innerHTML = "JOUR " + (NextPrev+1) + " : " + Descriptif_forfait[NextPrev].titre;
@@ -234,5 +243,5 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
 
   }
-  openTab(null, 'descriptif')
+  
   
