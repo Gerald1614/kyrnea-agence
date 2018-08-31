@@ -16,13 +16,15 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
-    "gulp": "latest",
     "gulp-csso": "latest",
     "gulp-htmlmin": "latest",
     "gulp-imagemin": "latest",
-    "run-sequence": "latest",
     "gulp-terser": "latest",
-    "gulp-concat": "latest"
+    "gulp-concat": "latest",
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp": "github:gulpjs/gulp"
+  }
 }
