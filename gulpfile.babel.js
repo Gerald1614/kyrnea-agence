@@ -25,7 +25,7 @@ const paths = {
   }
 };
 
-const watch = () => gulp.watch('src/**', gulp.series([scripts, pages, styles, imagecomp], reload));
+const watch = () => gulp.watch('src/**', gulp.series([scripts, pages, styles], reload));
 
 function reload(done) {
   server.reload();
@@ -88,8 +88,8 @@ export function pages() {
 
 export const clean = () => del([ 'dist' ]);
 
-export const dev = gulp.series(clean,imagecomp, scripts, styles, pages,  serve, watch);
-export const build = gulp.series(clean,imagecomp, scripts, styles, pages);
+export const dev = gulp.series(clean, imagecomp, scripts, styles, pages,  serve, watch);
+export const build = gulp.series(clean, imagecomp, scripts, styles, pages);
 
      
 
