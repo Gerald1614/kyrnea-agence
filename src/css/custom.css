@@ -1,13 +1,13 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body {
-  font-size: 1.5vw;
+  font-size: 1em;
 }
 body, html {
     height: 100%;
     color: #3B3B3B;
     line-height: 1.8;
-    background-image: url(/public/images/fond.jpg)
+    background-image: url(/images/fond.jpg)
 }
 a:link {
   text-decoration: none;
@@ -24,19 +24,19 @@ a:link {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/public/images/corsican-564259_960_720.jpg');
+    background-image: url('/images/corsican-564259_960_720.jpg');
     min-height: 600px;
 }
 
 /* Second image (forfait) */
 .bgimg-2 {
-    background-image: url('/public/images/Monte_Grosso.jpg');
+    background-image: url('/images/Monte_Grosso.jpg');
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url('/public/images/04_Calanche_Piana.jpg');
+    background-image: url('/images/04_Calanche_Piana.jpg');
     min-height: 300px;
 }
 .w3-display-middle {

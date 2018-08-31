@@ -4,31 +4,31 @@ let Descriptif_forfait =
    "jour": 1,
    "titre": "Départ",
    "contenu": "Départ de Montréal pour la Corse, «L’île aux trésors ». Vol sur Air Transat. Repas puis petit déjeuner à bord.",
-   "photo": "./public/images/avion.jpg"
+   "photo": "./images/avion.jpg"
  },
  {
   "jour": 2,
   "titre": "Arrivée à Figari",
   "contenu": "Arrivée à l’aéroport de Marseille où votre guide corse vous attendra. Récupération des  bagages. Repas de midi au restaurant Chefs en Provence. Puis vol de correspondance de 45 minutes sur Air Corsica, pour l'aéroport de Figari situé à quinze minutes de Bonifaziu (Bonifacio). Installation à votre hôtel. Souper libre (d’excellents restaurants se trouvent à quelques pas de l’hôtel, sur le port de plaisance, qui est un véritable petit fjord).",
-  "photo": "./public/images/Arbre_Corse_GR20.jpg"
+  "photo": "./images/Arbre_Corse_GR20.jpg"
  },
  {
   "jour": 3,
   "titre": "Visite de Bonifaziu",
   "contenu": "<p>Visite de Bonifaziu (Bonifacio), la ville extrême, où l’on a rendez-vous avec l’extrême beauté. Belle, mais plus encore étonnante, Bonifaziu est  une ville à part, « une île dans l’île »,  disent les Corses. Tout y est différent : nature, parler, couleurs ; Bonifaziu n’a qu’une chose en commun avec le reste de la Corse : la beauté.  Défiant les lois de l’équilibre, perchée sur de hautes falaises de calcaire blanc, ceinturée de remparts et de bastions qui rappellent son histoire mouvementée, la «ville funambule» a toujours fortement subjugué ses visiteurs. Elle est également chargée d’histoire et vit passer bien des hommes célèbres tels que, Ulysse, Saint François d’Assise, Charles Quint, Bonaparte et «la plus vieille dame de Corse» (âgée de 8.750 ans).</p> <p> Après une mini-croisière incluse d’1h15 environ (grotte Napoléon, «tapis d’orient », la calanque, le gouvernail de la Corse, le grain de sable…), vous  monterez dans la haute ville abritée derrière des remparts monumentaux. Là vous visiterez la vieille cité et ses ruelles étroites, ses arc-boutants, son belvédère impressionnant, l’église Ste Marie Majeure et le Bastion du Mémorial avec ses salles souterraines.  Et, pendant votre temps libre, vous ferez des achats dans les nombreuses boutiques d’artisans dont une où vous trouverez la spécialité locale : des produits faits en liège (jupes, gilets, soutien-gorge, vaisselle et objets divers). Pour les plus courageux, il y aura aussi la possibilité de descendre «L’escalier du roi d’Aragon»: 187 marches taillées dans la falaise. Nuit à Bonifaziu. Souper inclus. (0 Kms)</p>",
-  "photo": "./public/images/Bonifacio_les_falaises.jpg"
+  "photo": "./images/Bonifacio_les_falaises.jpg"
  },
  {
   "jour": 4,
   "titre": "Aiguilles de Bavella, Filitosa, Sartène",
   "contenu": "<p>La journée commencera par les aiguilles de Bavella, les « Dolomites corses ». Arrivés au col (1.300 mètres d’altitude) vous pourrez admirer les « Pins peignés » et surtout les fameuses « aiguilles ». Sur le trajet, un petit arrêt vous fera découvrir le plus gros châtaignier de France (13 mètres de circonférence et âgé de 700 ans). Ensuite, ce sera la visite du village préhistorique de Filitosa , vieux de 8.000 ans, et qui est la «plus grande aventure archéologique de la Corse». Vous pourrez voir nombre de menhirs et autres objets de l’époque mégalithique.</p> <p> Après avoir quitté Filitosa vous vous dirigerez vers Sartè (Sartène) très jolie petite ville Médiévale qui s’ennorgueillit d’être la «plus corse des Villes corses». Sartè fut également  le théâtre de «Vendette»  fameuses décrites par nombre d’écrivains dont Prosper Mérimée, auteur de « Colomba ». La plus célèbre et la plus sanglante fut celle de 1834. C’est aussi  dans cette petite ville de Sartè qu’a lieu le vendredi saint,  l’impressionnante procession du «Catenacciu» (L’enchaîné). Arrivée à Aiacciu (Ajaccio) et installation à votre hôtel (qui fut la maison de la nourrice de Napoléon) situé dans la vieille ville, face à la citadelle et à une minute de la plage. Souper inclus.(140 kms).</p>",
-  "photo": "./public/images/jpg_Zonza_et_les_aiguilles_de_Bavella.jpg"
+  "photo": "./images/jpg_Zonza_et_les_aiguilles_de_Bavella.jpg"
  },
  {
   "jour": 5,
   "titre": "Visite d'Aiacciu",
   "contenu": "<p>Visite D’Aiacciu (Ajaccio). Durant cette visite, vous aurez l’occasion  de découvrir tous les charmes de la capitale politique de la Corse  qui est aussi, et surtout, la ville natale de Napoléon et de Tino Rossi. Au programme :</p><ul><li>La cathédrale.</li><li>La vieille ville, la rue Fesch et le « Borgu » </li> <li>Le Marché.</li><li>Musée Fesch.</li></ul> <p>En soirée, souper inclus. (0 Kms). </p>",
-  "photo": "./public/images/ORIG_ajaccio.jpg"
+  "photo": "./images/ORIG_ajaccio.jpg"
  },
  {
   "jour": 6,
@@ -40,7 +40,7 @@ let Descriptif_forfait =
   "jour": 7,
   "titre": "Réserve de Scandola",
   "contenu": "<p>Dans la matinée, vous visiterez la tour Génoise de U Portu (Porto), une des deux seules que l'on peut visiter en Corse et du haut de laquelle vous aurez vue sur le golfe. Puis petit arrêt au minuscule musée de la bruyère, une plante chargée de légendes en Corse. En début d'après midi, si la  mer le permet, mini croisière de cinq heures dans la réserve de Scandola, un autre site classé de Corse: falaises rouges plongeant dans une mer bleue turquoise, nids d'aigles pêcheurs perché sur des tours de granit, un véritable enchantement ! Il y aura également un arrêt dans le village de Ghjirulata (Girolata), accessible uniquement par la mer et défendu par un petit fort qui vit passer un célèbre pirate. Retour à U Portu (Porto) vers 18H00.Souper inclus. (0 Kms).</p>",
-  "photo": "./public/images/Reserve_Scandola_03.JPG"
+  "photo": "./images/Reserve_Scandola_03.JPG"
  },
  {
   "jour": 8,
@@ -52,13 +52,13 @@ let Descriptif_forfait =
   "jour": 9,
   "titre": " Visite de Bastia",
   "contenu": "<p>Visite de Bastia (la ville doit son nom à un bastion,« Bastiglia » en italien, érigé en 1380 au temps de la domination Génoise). Bastia, c’est «la fourmi », car l’écrivain Gustave Flaubert, qui séjourna en Corse, parlant d’Aiacciu et de Bastia écrivit : « Aiacciu et Bastia, c’est un peu la cigale et la fourmi ». Bastia est en effet la capitale économique de la Corse et s’est ouverte relativement tard aux touristes auxquels elle a pourtant de nombreux trésors à offrir : de l’immense place Saint Nicolas à la citadelle (où vécut Victor Hugo enfant), en passant par la vieille ville et son musée, vous apprécierez sûrement cette grande dame, belle mais discrète, qu’est Bastia. Souper inclus. (0 Kms). </p>",
-  "photo": "./public/images/bastia.jpg"
+  "photo": "./images/bastia.jpg"
  },
  {
   "jour": 10,
   "titre": "Le Cap Corse et le désert des Agriates",
   "contenu": "<p>Aujourd’hui, vous allez découvrir le cap corse, à la personnalité particulière : c’est la seule région de Corse où l’on trouve des marins, car, pour des raisons que votre guide vous expliquera, les corses n’aimaient pas la mer et devinrent donc des montagnards, à l’exception des cap-corsins (habitants du Cap) qui furent d’excellents marins s’illustrant partout et toujours, de la bataille navale de Lépante à la conquête de l’Amérique. Le cap est aussi une superbe région: petits villages accrochés au bord de la falaise comme celui de Nonza, ou bien les pieds dans l’eau, comme celui d’Erbalunga, magnifique route en corniche, sanctuaire de Lavasina, il y a tout pour séduire le visiteur.</p> <p> Puis vous traverserez le désert des Agriates, impressionnant de solitude et où plane encore, l’ombre de « A Biscia », un monstre légendaire dont vous parlera votre guide. En fin d’après-midi, vous arriverez en Balagna, dans le village de l’Algaiola (Algajola) où vous vous installerez à votre hôtel situé directement sur la plage. Souper inclus (126 Kms). </p>",
-  "photo": "./public/images/8609_Nonza.jpg"
+  "photo": "./images/8609_Nonza.jpg"
  },
  {
   "jour": 11,
@@ -70,7 +70,7 @@ let Descriptif_forfait =
   "jour": 12,
   "titre": "La visite de Calvi",
   "contenu": "<p>Cette journée commencera par la visite de Calvi. Là, attendez vous à un émerveillement total: arc-boutée sur son monumental promontoire, la cité forteresse, «la guerrière en armure ocre», a beaucoup à vous offrir. Sa citadelle est probablement la plus belle de Corse, son histoire est riche et originale : elle vit peut-être naître Christophe Colomb,  fut le refuge de Napoléon et coûta un œil, au célèbre amiral Nelson, lors d’un  siège demeuré fameux. Ensuite ce sera la montée au  Belvédère. De là, un spectacle grandiose s’offrira à vous: à vos pieds toute la baie de Calvi et la plaine de Balagna, adossées à une chaîne de montagnes aux sommets à plus de 2.500 mètres. En après-midi, ce sera la visite du plus célèbre village de Balagna, réputé pour ses terribles « abeilles guerrières », (qui eurent un rôle décisif dans l’histoire de la Corse) et où est enterrée la sainte patronne de la Balagna, martyrisée, avec cinq de ses compagnons, en l’an 304 sous le règne de l’empereur Dioclétien. Dans ce village, vous  aurez aussi droit à une dégustation dans un des plus réputés domaines viticoles de l’île, où l’on produit des vins très appréciés, mais aussi des digestifs, des confitures, des miels, des nougats et bien d’autres succulents produits corses que vous pourrez savourer à volonté. Vous visiterez plus tard, dans un autre village, un moulin à huile où, là aussi, vous aurez droit à une petite dégustation d’huile d’olive de Corse, dont certaines sont les meilleures de France (médailles d’or au « Concours général agricole de France »). Cette année (2019), l’une d’entre elles, vient d’être classée parmi les dix meilleures huiles d’olive du monde. Le chemin du retour vous fera passer par plusieurs autres villages de Balagne tous aussi beaux les uns que les autres, dont un vit probablement naître Don Juan. Nuit à l’Algaiola.Souper inclus. (31 Kms).</p>",
-  "photo": "./public/images/Calvi_vue.jpg"
+  "photo": "./images/Calvi_vue.jpg"
  },
  {
   "jour": 13,
@@ -82,18 +82,18 @@ let Descriptif_forfait =
   "jour": 14,
   "titre": "Journée libre",
   "contenu": "<p>Profitez en pour aller au « monolithe », la curiosité locale, pour aller à la plage, pour visiter le village de L’Algaiola et son petit atelier de céramique « les pieds dans l’eau, les mains dans la terre, les yeux sur la mer » ou bien pour faire un petit tour avec le pittoresque et très ancien petit train de Corse, aussi appelé dans l’île TGV (pour : Train à Grande Vieillesse ou Train à Grandes Vibrations). Souper inclus.</p>",
-  "photo": "./public/images/train.jpg"
+  "photo": "./images/train.jpg"
  },
  {
   "jour": 15,
   "titre": "La Castagniccia",
   "contenu": "<p>Votre dernière journée en Corse commencera par la découverte de A Castagniccia (la châtaigneraie). Elle fut durant des siècles une des plus prospères régions de Corse, c’est une véritable mer de châtaigniers, d’où émergent, comme des phares au milieu de l’océan, les clochers des très nombreux villages de la Castagniccia. Cette région vallonnée est une immense forêt de châtaigniers, un arbre qui sauva la Corse de la famine durant des siècles. En Corse on l’appelle d’ailleurs «l’arbre à pain». Il a toute une histoire et fut durant des siècles la base de l’économie de cette région et on peut parler à juste titre, pour la Corse, de «civilisation du châtaignier». Ce jour là, le repas inclus sera celui de midi, il se prendra dans un petit village  d’une centaine d’habitants. Au menu, si la chasse a été bonne, du sanglier et autres spécialités locales à base de châtaignes. Nichée au fond d’une vallée sous des châtaigniers multiséculaires, se trouve un autre trésor de A Castagniccia : la source de Pie’d’Orezza  dont l’on embouteille l’eau pétillante aux multiples vertus, que l’on exporte jusqu’au Japon et à New York (30$ la bouteille dans les grands restaurants).</p> <p> L’après-midi, visite de la maison natale de Pasquale de Paoli  (transformée en petit musée) qui mena la Corse à l’indépendance en 1755 et dont l’œuvre stupéfia l’Europe entière (constitution écrite, droit de vote, y compris pour les femmes, ouverture d’une université…). Voltaire écrivit d’ailleurs: «Toute l’Europe est corse». En fin d’après midi, vous arriverez à Mariana, où fut fondé le premier Bastia, il y a deux mille ans. On peut y voir les petites  ruines de l’ancienne cité fondée par le général romain Marius. Des fouilles ont encore lieu à l’heure actuelle. Par la suite, vous aurez droit à la visite de la brasserie A Pietra, où l’on produit la bière corse à la châtaigne, et bien sur, vous aurez droit à une dégustation. Puis ce sera l’arrivée à l’aéroport de Poretta d’où vous décollerez à 19H10 en direction de l’aéroport de Marseille où vous passerez la nuit (hôtel Ibis). Souper libre. (74 Kms).</p>",
-  "photo": "./public/images/cochons.jpg"
+  "photo": "./images/cochons.jpg"
  },
  {
   "jour": 16,
   "titre": "Départ à 14h35 pour Montréal où vous  arriverez à 16h50",
   "contenu": "À BIENTÔT",
-  "photo": "./public/images/ORIG_caldarello.jpg"
+  "photo": "./images/ORIG_caldarello.jpg"
  }
 ]

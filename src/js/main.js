@@ -56,8 +56,8 @@ function myMap()
       flightPath.setMap(map);
 
       var markers = [
-        ['Quebec', 45.5300631, -73.6154668, '/public/images/montreal.png'],
-        ['Corse', 42.3282433,  9.0489307, '/public/images/corse_tete.gif']
+        ['Quebec', 45.5300631, -73.6154668, '/images/montreal.png'],
+        ['Corse', 42.3282433,  9.0489307, '/images/corse_tete.gif']
       ];
      
 

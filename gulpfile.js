@@ -14,14 +14,14 @@ var concat = require('gulp-concat');
     gulp.task('browser-sync', function () {
         var files = [
            './src/*.html',
-           './src/stylus/*.css',
+           './src/css/*.css',
            './src/public/images/*.{png,jpg,gif,svg,jpeg}',
            './src/js/*.js'
         ];
      
         browserSync.init(files, {
            server: {
-              baseDir: "./src"
+              baseDir: "./dist"
            }
         });
      
@@ -30,7 +30,7 @@ var concat = require('gulp-concat');
 
      // Images
      gulp.task('imagemin', () =>
-     gulp.src('./src/public/images/*')
+     gulp.src('./src/images/*')
          .pipe(imagemin([
           imagemin.gifsicle({interlaced: true}),
           imagemin.jpegtran({progressive: true}),
@@ -57,7 +57,7 @@ gulp.task('scripts', function() {
 
 // Gulp task to minify CSS files
 gulp.task('styles', function () {
-  return gulp.src('./src/stylus/custom.css')
+  return gulp.src('./src/css/custom.css')
     // Minify the file
     .pipe(csso())
     // Output
@@ -80,7 +80,7 @@ gulp.task('clean', () => del(['dist']));
      // Default task
      gulp.task('default',['clean'], function () {
        runSequence(
-        'browser-sync', 'imagemin', 'pages', 'scripts', 'styles'
+        'imagemin', 'pages', 'scripts', 'styles','browser-sync'
        );
            
      });
