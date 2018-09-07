@@ -1,5 +1,5 @@
 
-const Base_URL = "http://127.0.0.1:8887";
+//const Base_URL = "http://127.0.0.1:8887";
 
 
 //responsive design : adjust zoom of google map to size of screen
@@ -72,7 +72,7 @@ function myMap()
                 scaledSize: new google.maps.Size(48, 36), // scaled size
                 origin: new google.maps.Point(0,0), // origin
                 anchor: new google.maps.Point(24,48), // anchor
-                url: Base_URL + place[3]
+                url: place[3]
               },
             title: place[0]
           });
