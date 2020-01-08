@@ -27,7 +27,7 @@ let Descriptif_forfait =
  {
   "jour": 5,
   "titre": "Visite d'Aiacciu",
-  "contenu": "<p>Visite D’Aiacciu (Ajaccio). Durant cette visite, vous aurez l’occasion  de découvrir tous les charmes de la capitale politique de la Corse  qui est aussi, et surtout, la ville natale de Napoléon et de Tino Rossi. Au programme :</p><ul><li>La cathédrale.</li><li>La vieille ville, la rue Fesch et le « Borgu » </li> <li>Le Marché.</li><li>Musée Fesch.</li></ul> <p>En soirée, souper inclus. (0 Kms). </p>",
+  "contenu": "<p>Visite D’Aiacciu (Ajaccio). Durant cette visite, vous aurez l’occasion  de découvrir tous les charmes de la capitale politique de la Corse  qui est aussi, et surtout, la ville natale de Napoléon et de Tino Rossi. Au programme :</p><ul><li>La cathédrale.</li><li>La vieille ville, la rue Fesch et le « Borgu » </li> <li>Le Marché.</li><li>Maison natale de Napoléon.</li></ul> <p>En soirée, souper inclus. (0 Kms). </p>",
   "photo": "./images/ORIG_ajaccio.jpg"
  },
  {
@@ -39,7 +39,7 @@ let Descriptif_forfait =
  {
   "jour": 7,
   "titre": "Réserve de Scandola",
-  "contenu": "<p>Dans la matinée, vous visiterez la tour Génoise de U Portu (Porto), une des deux seules que l'on peut visiter en Corse et du haut de laquelle vous aurez vue sur le golfe. Puis petit arrêt au minuscule musée de la bruyère, une plante chargée de légendes en Corse. En début d'après midi, si la  mer le permet, mini croisière de cinq heures dans la réserve de Scandola, un autre site classé de Corse: falaises rouges plongeant dans une mer bleue turquoise, nids d'aigles pêcheurs perché sur des tours de granit, un véritable enchantement ! Il y aura également un arrêt dans le village de Ghjirulata (Girolata), accessible uniquement par la mer et défendu par un petit fort qui vit passer un célèbre pirate. Retour à U Portu (Porto) vers 18H00.Souper inclus. (0 Kms).</p>",
+  "contenu": "<p>Dans la matinée, vous visiterez la tour Génoise de U Portu (Porto), une des deux seules que l'on peut visiter en Corse et du haut de laquelle vous aurez vue sur le golfe. Puis petit arrêt au minuscule musée de la bruyère, une plante chargée de légendes en Corse. En début d'après midi, si la  mer le permet, mini croisière de trois heures trente dans la réserve de Scandola, un autre site classé de Corse: falaises rouges plongeant dans une mer bleue turquoise, nids d'aigles pêcheurs perché sur des tours de granit, un véritable enchantement ! Il y aura également un arrêt dans le village de Ghjirulata (Girolata), accessible uniquement par la mer et défendu par un petit fort qui vit passer un célèbre pirate. Retour à U Portu (Porto) vers 18H00.Souper inclus. (0 Kms).</p>",
   "photo": "./images/Reserve_Scandola_03.JPG"
  },
  {
@@ -92,7 +92,7 @@ let Descriptif_forfait =
  },
  {
   "jour": 16,
-  "titre": "Départ à 14h35 pour Montréal où vous  arriverez à 16h50",
+  "titre": "Décollage à 13h00 pour Montréal où vous  arriverez à 15h30",
   "contenu": "À BIENTÔT",
   "photo": "./images/ORIG_caldarello.jpg"
  }
