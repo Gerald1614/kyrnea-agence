@@ -1,7 +1,4 @@
 
-//const Base_URL = "http://127.0.0.1:8887";
-
-
 //responsive design : adjust zoom of google map to size of screen
 var zoom;
 var mqls = [ // list of window.matchMedia() queries
