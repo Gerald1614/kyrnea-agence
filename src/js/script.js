@@ -187,7 +187,6 @@ function initForfait() {
 
 
 function previousDay() {
-
     if(NextPrev > 0) {
         NextPrev--;
         jour_select.innerHTML = "JOUR " + (NextPrev+1) + " : " + Descriptif_forfait[NextPrev].titre;
@@ -197,7 +196,7 @@ function previousDay() {
         previousBtn.innerHTML = "&laquo; " + "JOUR " + NextPrev
         nextBtn.innerHTML = "JOUR " + (NextPrev +2) + " &raquo;";
     } 
-    if (NextPrev ===1) {
+    if (NextPrev ===0) {
         previousBtn.innerHTML = "&laquo;"
         previousBtn.classList.add("w3-disabled")
     }
@@ -206,7 +205,7 @@ function previousDay() {
 }
 
 function nextDay() {
-    if(NextPrev <15) {
+    if(NextPrev <16) {
         NextPrev++;
         jour_select.innerHTML = "JOUR " + (NextPrev+1) + " : " + Descriptif_forfait[NextPrev].titre;
         contenu.innerHTML = Descriptif_forfait[NextPrev].contenu;
@@ -215,7 +214,7 @@ function nextDay() {
         previousBtn.innerHTML = "&laquo; " + "JOUR " + NextPrev
         nextBtn.innerHTML = "JOUR " + (NextPrev +2)+ " &raquo;";
     } 
-    if (NextPrev ===14) {
+    if (NextPrev ===15) {
         nextBtn.innerHTML= "&raquo;";
         nextBtn.classList.add("w3-disabled")
     }
